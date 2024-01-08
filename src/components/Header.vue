@@ -3,9 +3,7 @@
 
 <template>
   <section class="p-10">
-    <div
-      class="w-[83%] max-w-[1200px] mx-auto text-[#4C243B] font-bold flex justify-between items-center"
-    >
+    <div class="w-[83%] max-w-[1200px] mx-auto font-bold flex justify-between items-center">
       <div class="w-[60%]">
         <p class="text-lg mb-3">olamileke.dev</p>
         <p>tracking for my different apps. frontends, backends and bots.</p>
