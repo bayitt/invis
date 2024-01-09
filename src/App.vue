@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import Header from './components/Header.vue'
-import Application from './components/Application.vue'
+import Header from './components/Header.vue';
+import Applications from './components/Applications.vue';
+import { applications } from './data';
 </script>
 
 <template>
   <Header />
-  <Application />
+  <Applications />
 </template>
 
