@@ -7,7 +7,7 @@ const props = defineProps<{
 }>();
 
 const typeColorMappings: Record<string, string> = {
-  frontend: '#B8BEDD',
+  frontend: '#F8FCDA',
   api: '#EEC584',
   bot: '#BFEDEF',
 };
@@ -19,30 +19,33 @@ const getTypeColor = () => {
 
 <template>
   <div
-    class="group p-5 border border-[#333333] flex justify-between items-center"
+    class="group p-5 shadow rounded-sm flex bg-[#FFFFFF] justify-between items-center"
     style="width: calc((100% - 32px) / 3)"
   >
-    <div class="h-fit-content">
+    <div>
       <div class="mb-3 flex gap-3">
-        <p class="text-sm uppercase">{{ name }}</p>
+        <p class="text-xs uppercase font-semibold">{{ name }}</p>
         <a
           :href="url"
           target="_blank"
           rel="noopener noreferrer"
-          class="relative -top-[3px] transition-opacity duration-1000 ease-in-out opacity-0 group-hover:opacity-100"
+          class="transition-opacity duration-1000 ease-in-out opacity-0 group-hover:opacity-100"
         >
           <FontAwesomeIcon
             icon="fa-solid fa-up-right-from-square"
-            class="text-xs text-[#333333]"
+            class="relative -top-[6px] text-xs text-[#333333]"
           />
         </a>
         <a
           :href="github_url"
           target="_blank"
           rel="noopener noreferrer"
-          class="relative -top-[3px] transition-opacity duration-1000 ease-in-out opacity-0 group-hover:opacity-100"
+          class="transition-opacity duration-1000 ease-in-out opacity-0 group-hover:opacity-100"
         >
-          <FontAwesomeIcon icon="fa-brands fa-github" class="text-xs" />
+          <FontAwesomeIcon
+            icon="fa-brands fa-github"
+            class="relative -top-[6px] text-xs"
+          />
         </a>
       </div>
       <span
@@ -57,5 +60,9 @@ const getTypeColor = () => {
       icon="fa-solid fa-circle-check"
       class="text-3xl text-[#6CAE75]"
     />
+    <!-- <FontAwesomeIcon
+      icon="fa-solid fa-circle-xmark"
+      class="text-3xl text-[#DB5461]"
+    /> -->
   </div>
 </template>

@@ -117,4 +117,30 @@ export const applications: TApplication[] = [
             },
         ]
     },
+    {
+        name: "Bots",
+        url: "https://bots.olamileke.dev",
+        github_url: "https://github.com/olamileke/bots-docker",
+        image: "",
+        services: [
+            {
+                name: "factsonfactsbot",
+                github_url: "https://github.com/olamileke/factsonfactsbot",
+                url: "https://t.me/factsonfactsbot",
+                type: "bot",
+            },
+            {
+                name: "newsondemandbotbot",
+                github_url: "https://github.com/olamileke/newsondemandbot",
+                url: "https://t.me/news_on_demand_bot",
+                type: "bot",
+            },
+            {
+                name: "politicalnewsbot",
+                github_url: "https://github.com/olamileke/politicalnewsbot",
+                url: "https://t.me/a_news_bot",
+                type: "bot",
+            },
+        ]
+    },
 ]

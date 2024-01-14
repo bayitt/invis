@@ -11,7 +11,7 @@
         <p>tracking for my different apps. frontends, apis and bots.</p>
       </div>
 
-      <div class="flex gap-4">
+      <!-- <div class="flex gap-4">
         <FontAwesomeIcon
           icon="fa fa-envelope"
           class="relative top-[1px] text-[1.4rem]"
@@ -22,7 +22,7 @@
         />
         <FontAwesomeIcon icon="fa-brands fa-square-twitter" class="text-2xl" />
         <FontAwesomeIcon icon="fa-brands fa-linkedin" class="text-2xl" />
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
