@@ -550,12 +550,20 @@ video {
   position: relative;
 }
 
+.-top-\[3px\] {
+  top: -3px;
+}
+
 .bottom-\[1px\] {
   bottom: 1px;
 }
 
 .top-\[1px\] {
   top: 1px;
+}
+
+.top-\[2px\] {
+  top: 2px;
 }
 
 .mx-auto {
@@ -567,12 +575,8 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .flex {
@@ -585,10 +589,6 @@ video {
 
 .w-\[83\%\] {
   width: 83%;
-}
-
-.w-\[33\%\] {
-  width: 33%;
 }
 
 .w-full {
@@ -611,20 +611,38 @@ video {
   justify-content: space-between;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
-.gap-\[4\] {
-  gap: 4;
+.rounded-\[3px\] {
+  border-radius: 3px;
 }
 
-.p-10 {
-  padding: 2.5rem;
+.border {
+  border-width: 1px;
+}
+
+.border-\[\#333333\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(51 51 51 / var(--tw-border-opacity));
 }
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-\[6px\] {
+  padding: 6px;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .font-manrope {
@@ -636,13 +654,36 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-\[1\.4rem\] {
   font-size: 1.4rem;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
+}
+
+.text-\[13\.5px\] {
+  font-size: 13.5px;
 }
 
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -651,4 +692,52 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-\[\#00000\] {
+  color: #00000;
+}
+
+.text-\[\#333333\] {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+.text-\[\#6CAE75\] {
+  --tw-text-opacity: 1;
+  color: rgb(108 174 117 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.decoration-double {
+  text-decoration-style: double;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
 }

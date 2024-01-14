@@ -10,5 +10,5 @@ export type TService = {
     name: string;
     github_url: string;
     url: string;
-    type: "frontend" | "backend" | "bot"
+    type: "frontend" | "api" | "bot"
 }
