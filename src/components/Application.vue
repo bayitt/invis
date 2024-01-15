@@ -25,11 +25,16 @@ defineProps<{
       </a>
     </div>
     <div class="flex flex-wrap gap-4 w-full">
-      <Service
-        v-for="(service, index) in services"
-        :key="index"
-        v-bind="service"
-      />
+      <Suspense>
+        <template #default>
+          <Service
+            v-for="(service, index) in services"
+            :key="index"
+            v-bind="service"
+          />
+        </template>
+        <template #fallback> Loading </template>
+      </Suspense>
     </div>
   </div>
 </template>

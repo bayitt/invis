@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { usePing } from '../composables/ping';
+
 const props = defineProps<{
   name: string;
   github_url: string;
@@ -15,6 +17,8 @@ const typeColorMappings: Record<string, string> = {
 const getTypeColor = () => {
   return typeColorMappings[props.type];
 };
+
+const status = await usePing(props.url, props.type);
 </script>
 
 <template>
