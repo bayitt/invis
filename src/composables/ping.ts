@@ -1,7 +1,7 @@
 import { ref } from "vue";
 import { client } from "../client";
 
-export const usePing = async (url: string, type: "frontend" | "api" | "bot") => {
+export const usePing = async (url: string, type: "frontend" | "api" | "bot", onFetch?: () => void) => {
     let parsedUrl = type === "api" ? url + "/ping" : url;
 
     const status = ref("loading");
@@ -12,6 +12,9 @@ export const usePing = async (url: string, type: "frontend" | "api" | "bot") => 
     }
     catch(error) {
         status.value = "error";
+    }
+    finally {
+        onFetch?.();
     }
  
     return status;

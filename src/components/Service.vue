@@ -8,6 +8,8 @@ const props = defineProps<{
   type: 'frontend' | 'api' | 'bot';
 }>();
 
+const emits = defineEmits(['updateFetchedServices']);
+
 const typeColorMappings: Record<string, string> = {
   frontend: '#F8FCDA',
   api: '#EEC584',
@@ -18,7 +20,9 @@ const getTypeColor = () => {
   return typeColorMappings[props.type];
 };
 
-const status = await usePing(props.url, props.type);
+const status = await usePing(props.url, props.type, () => {
+  emits('updateFetchedServices');
+});
 </script>
 
 <template>
@@ -61,12 +65,14 @@ const status = await usePing(props.url, props.type);
       >
     </div>
     <FontAwesomeIcon
+      v-if="status === 'success'"
       icon="fa-solid fa-circle-check"
       class="text-3xl text-[#6CAE75]"
     />
-    <!-- <FontAwesomeIcon
+    <FontAwesomeIcon
+      v-if="status === 'error'"
       icon="fa-solid fa-circle-xmark"
       class="text-3xl text-[#DB5461]"
-    /> -->
+    />
   </div>
 </template>
