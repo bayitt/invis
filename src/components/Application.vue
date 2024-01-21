@@ -47,8 +47,7 @@ const updateFetchedServices = () => {
           <Skeleton
             v-for="n in services.length"
             :key="n"
-            class="h-[100px]"
-            style="width: calc((100% - 32px) / 3)"
+            class="h-[100px] w-full sm:w-2-column lg:w-3-column"
           />
         </template>
       </Suspense>

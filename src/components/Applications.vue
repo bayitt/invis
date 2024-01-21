@@ -4,7 +4,7 @@ import { applications } from '../data';
 </script>
 
 <template>
-  <section class="w-[83%] max-w-[1200px] mx-auto">
+  <section class="w-[83%] max-w-[1200px] mx-auto pb-4 sm:pb-8">
     <Application
       v-for="(application, index) in applications"
       :key="index"

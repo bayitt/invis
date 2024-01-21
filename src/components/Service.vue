@@ -27,8 +27,7 @@ const status = await usePing(props.url, props.type, () => {
 
 <template>
   <div
-    class="group p-5 shadow rounded-sm flex bg-[#FFFFFF] justify-between items-center"
-    style="width: calc((100% - 32px) / 3)"
+    class="group p-5 shadow rounded-sm flex bg-[#FFFFFF] justify-between items-center w-full sm:w-2-column lg:w-3-column"
   >
     <div>
       <div class="mb-3 flex gap-3">
