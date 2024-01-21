@@ -5,7 +5,7 @@
   <section
     class="bg-[#4C243B] p-12 sm:p-16 flex flex-col items-center text-[#FFFFFF]"
   >
-    <div class="flex justify-center gap-6 w-fit mb-7">
+    <div class="flex justify-center gap-6 w-fit mb-8">
       <a
         href="mailto:olamileke.f@gmail.com"
         class="w-[50px] h-[50px] flex justify-center items-center border border-[1px] border-[#FFFFFF] rounded-full"
