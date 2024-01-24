@@ -562,6 +562,14 @@ video {
   bottom: 1px;
 }
 
+.top-\[2px\] {
+  top: 2px;
+}
+
+.top-\[1px\] {
+  top: 1px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -573,6 +581,22 @@ video {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
 }
 
 .flex {
@@ -658,6 +682,10 @@ video {
   gap: 1.5rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-\[3px\] {
   border-radius: 3px;
 }
@@ -668,10 +696,6 @@ video {
 
 .rounded-sm {
   border-radius: 0.125rem;
-}
-
-.rounded {
-  border-radius: 0.25rem;
 }
 
 .border {
@@ -711,16 +735,16 @@ video {
   padding: 3rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
 
 .p-\[6px\] {
   padding: 6px;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .py-10 {
@@ -749,6 +773,10 @@ video {
   font-size: 13.5px;
 }
 
+.text-\[14px\] {
+  font-size: 14px;
+}
+
 .text-\[15px\] {
   font-size: 15px;
 }
@@ -768,12 +796,9 @@ video {
   line-height: 1rem;
 }
 
-.text-\[12px\] {
-  font-size: 12px;
-}
-
-.text-\[14px\] {
-  font-size: 14px;
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -810,10 +835,6 @@ video {
 .text-\[\#FFFFFF\] {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#FFFFF\] {
-  color: #FFFFF;
 }
 
 .opacity-0 {

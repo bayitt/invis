@@ -18,6 +18,7 @@
       <a
         href="https://github.com/olamileke"
         target="_blank"
+        rel="noopener noferrer"
         class="w-[50px] h-[50px] flex justify-center items-center border border-[1px] border-[#FFFFFF] rounded-full"
       >
         <FontAwesomeIcon
@@ -28,6 +29,7 @@
       <a
         href="https://twitter.com/f_olamileke"
         target="_blank"
+        rel="noopener noferrer"
         class="w-[50px] h-[50px] flex justify-center items-center border border-[1px] border-[#FFFFFF] rounded-full"
       >
         <FontAwesomeIcon icon="fa-brands fa-square-twitter" class="text-xl" />
@@ -35,6 +37,7 @@
       <a
         href="https://www.linkedin.com/in/fambegbe-olamileke-4a9731145/"
         target="_blank"
+        rel="noopener noferrer"
         class="w-[50px] h-[50px] flex justify-center items-center border border-[1px] border-[#FFFFFF] rounded-full"
       >
         <FontAwesomeIcon icon="fa-brands fa-linkedin" class="text-xl" />

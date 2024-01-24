@@ -10,10 +10,19 @@ import Button from './Button.vue';
       <div class="flex justify-between items-center w-full">
         <p class="font-bold">olamileke.dev</p>
 
-        <Button>
-          <FontAwesomeIcon icon="fa-brands fa-twitter" class="text-xl" />
-          Share
-        </Button>
+        <a
+          href="https://twitter.com/intent/tweet?text=Status&url=https://status.olamileke.dev"
+          target="_blank"
+          rel="noopener noferrer"
+        >
+          <Button>
+            <FontAwesomeIcon
+              icon="fa-brands fa-twitter"
+              class="mr-1 text-lg relative top-[1px]"
+            />
+            Share on Twitter
+          </Button>
+        </a>
       </div>
     </div>
   </section>
